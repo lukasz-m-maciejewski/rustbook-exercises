@@ -6,9 +6,10 @@ fn main() {
 
     let config = Config::new(&args);
 
-    println!("Searching for {}", query);
+    println!("Searching for {}", config.query);
 
-    let contents = fs::read_to_string(filename).expect("Something went wrong when reading file!");
+    let contents =
+        fs::read_to_string(config.filename).expect("Something went wrong when reading file!");
 
     println!("In text:\n{}", contents);
 }
