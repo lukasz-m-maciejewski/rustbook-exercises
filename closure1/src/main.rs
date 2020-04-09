@@ -6,8 +6,8 @@ fn main() {
     assert!(equal_to_x(y));
 }
 
-fn fun() -> dyn FnOnce(Vec<i32>) -> bool {
+fn fun() -> Box<dyn FnOnce(Vec<i32>) -> bool> {
     let x = vec![1, 2, 3];
 
-    return |z| { z == x }
+    Box::new(move |z| z == x)
 }

@@ -14,10 +14,7 @@ impl Rectangle {
     }
 }
 
-use std::io::Bytes;
-
 fn main() {
-    let v : Vec<_> = vec![1, 2, 3];
     let rect1 = Rectangle {
         width: 30,
         height: 50,
