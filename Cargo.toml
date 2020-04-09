@@ -1,0 +1,12 @@
+[workspace]
+
+members = [
+"adder",
+"catcher",
+"closure1",
+"hello",
+"minigrep",
+"rectangle",
+"restaurant",
+"thread_hello",
+]
